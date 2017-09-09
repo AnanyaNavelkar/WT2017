@@ -1,0 +1,120 @@
+html {
+	height: 100%;
+}
+
+body {
+    padding:0px;
+    font-size: 12px;
+    text-align: center;
+	height: 100%;
+}
+
+#landing {
+    background-color: #062F4F;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+.heading {
+    text-align: center;
+    padding-top: 300px;
+}
+
+#landing-heading {
+    font-size: 15em;
+    vertical-align: middle;
+    color: #B82601;
+}
+
+#landing-subhead {
+    font-size: 5em;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+.image {
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6)),url(books.jpeg);
+    background-position: center center;
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.one {
+    padding-top: 200px;
+    
+}
+
+
+#circular_sell, #circular_call, #circular_buy {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    background-color: aqua;
+    margin: 0 auto;   
+}
+
+
+
+#circular-text-sell, #circular-text-call, #circular-text-buy {
+    font-size: 5em;
+    padding-top: 75px;
+    color: #FFFFFF;
+}
+
+.icon {
+    font-size: 8em;
+    color: #B82601;
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+#sell {
+    background-color: #813772;
+    background-position: center center;
+    width: 100%;
+    height: 600px;
+}
+
+#call {
+    background-color: #B82601;
+    background-position: center center;
+    width: 100%;
+    height: 600px;
+}
+
+#buy {
+    background-color: #062F4F;
+    background-position: center center;
+    width: 100%;
+    height: 600px;
+}
+
+#footer {
+    background-color: #000000;
+    background-position: center center;
+    width: 100%;
+    height: 250px;
+}
+
+#para {
+    font-size: 30px;
+    color: #FFFFFF;
+    padding-top: 30px;
+}
+
+.names {
+    font-size: 35px;
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+
+a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
