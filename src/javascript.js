@@ -62,4 +62,26 @@ $(document).ready(function(){
             $(".icon", this).css("font-size", "8em");
         })
      });
-    
+
+//buy.html
+
+$(document).scroll(function() {
+  var documentScrollTop = $(document).scrollTop();
+  if (documentScrollTop > $('#header').height()) {
+    $('.navigation_bar').addClass('fixedattop');
+    var shiftContent = $('.navigation_bar').height();
+    $('#content').css('margin-top', shiftContent + 'px');
+  }
+  else if ($('.navigation_bar').hasClass('fixedattop')) {
+    $('.navigation_bar').removeClass('fixedattop');
+    $('#content').css('margin-top', '0px');
+  }
+});
+
+function onClickBuy() {
+    var r = confirm("Are you sure you want to buy this book?");
+    if(r == true)
+        {
+            alert("Your response has been recorded. Your contact details have been sent to the seller. Thanks for using this portal!");
+        }
+}
