@@ -6,15 +6,28 @@
 <meta name="viewport" content="width=device-width", initial-scale="1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="javascript.js"></script>
+<script src="css3-animate-it.js"></script> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="animations.css">
+<!--<link rel="stylesheet" href="css/stylesheet.css">-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 
 
 <body>
 
-    <div class="flex-center position-ref full-height">
+   
+
+	<div id="landing">
+        <div class="col-md-6 heading">
+            <h1 id="landing-heading" >TITLE</h1>
+		    <h4 id="landing-subhead">Description</h4>
+        </div>
+        <div class="col-md-6 register">
+            <!------ Registration page goes here ---->
+<!--
+             <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
@@ -26,14 +39,7 @@
                 </div>
             @endif
     </div>
-
-	<div id="landing">
-        <div class="col-md-6 heading">
-            <h1 id="landing-heading" >TITLE</h1>
-		    <h4 id="landing-subhead">Description</h4>
-        </div>
-        <div class="col-md-6 register">
-            <!------ Registration page goes here ---->
+-->
         </div>
     </div>
 
@@ -65,17 +71,25 @@
 
     </div>
 
-    <div id="sell">
+   <div id="sell"  class="animatedParent" data-sequence="1000'">
         <!--Describe the application-->
+          <h1 class='animated rotateInDownLeft' data-id="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
     </div>
+    
+    <div id="call" class="animatedParent" data-sequence="1000'">
+        <!--Describe the application-->
 
-    <div id="call">
-        <!--Describe the application-->
-    </div>
+        <h1 class='animated rotateInDownRight' data-id="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
 
-    <div id="buy">
-        <!--Describe the application-->
+
     </div>
+    
+    <div id="buy" class="animatedParent" data-sequence="1000'">
+        <!--Describe the application-->
+        <h1 class='animated bounceIn' data-id="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+
+    </div>
+    
 
     <div class="footer">
         <p id="para">Website designed and developed by:</p>

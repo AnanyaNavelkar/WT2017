@@ -1,6 +1,6 @@
 $(document).ready(function(){
         $("#circular_sell").mouseenter(function() {
-            $(this).css({"background-color" : "#813772", "height" : "200px", "width" : "200px", "border-radius" : "100px"});
+            $(this).css({"background-color" : "#062F4F", "height" : "200px", "width" : "200px", "border-radius" : "100px"});
             $(".icon", this).css("font-size", "10em");
             $("#circular-text-sell").css("font-size", "7em");
          })
@@ -18,7 +18,7 @@ $(document).ready(function(){
         })
         
         $("#circular_call").mouseenter(function() {
-            $(this).css({"background-color" : "#813772", "height" : "200px", "width" : "200px", "border-radius" : "100px"});
+            $(this).css({"background-color" : "#062F4F", "height" : "200px", "width" : "200px", "border-radius" : "100px"});
             $(".icon", this).css("font-size", "10em");
             $("#circular-text-call").css("font-size", "7em");
          })
@@ -36,7 +36,7 @@ $(document).ready(function(){
         })
         
         $("#circular_buy").mouseenter(function() {
-            $(this).css({"background-color" : "#813772", "height" : "200px", "width" : "200px", "border-radius" : "100px"});
+            $(this).css({"background-color" : "#062F4F", "height" : "200px", "width" : "200px", "border-radius" : "100px"});
             $(".icon", this).css("font-size", "10em");
             $("#circular-text-buy").css("font-size", "7em");
          })
@@ -85,3 +85,4 @@ function onClickBuy() {
             alert("Your response has been recorded. Your contact details have been sent to the seller. Thanks for using this portal!");
         }
 }
+
