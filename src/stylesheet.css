@@ -19,6 +19,7 @@ body {
 .heading {
     text-align: center;
     padding-top: 100px;
+    margin:auto;
 }
 
 
@@ -35,6 +36,11 @@ body {
     vertical-align: middle;
     color: #FFFFFF;
     font-family: 'Questrial', sans-serif;
+}
+
+.panel-heading {
+    font-size: 2em;
+    vertical-align: middle;
 }
 
 .image {
@@ -138,6 +144,21 @@ a:hover {
     text-decoration: underline;
 }
 
+/*
+.login {
+    float: right;
+    margin:20px;
+}
+
+
+.register {
+    float: right;
+    padding:20px;
+}
+
+*/
+
+
 /**********************************************/
 
 
@@ -148,7 +169,7 @@ p {
 }
 
 #header .carousel-inner .item {
-/*    background: url(image-buysell.jpg);*/
+ /*   background: url(img/image-buysell.jpg); */
     margin: 0px; padding: 0px;
     position: relative;
     width: 100%; 

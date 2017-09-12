@@ -19,7 +19,6 @@ body {
 .heading {
     text-align: center;
     padding-top: 100px;
-    margin:auto;
 }
 
 
@@ -38,13 +37,8 @@ body {
     font-family: 'Questrial', sans-serif;
 }
 
-.panel-heading {
-    font-size: 2em;
-    vertical-align: middle;
-}
-
 .image {
-    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6)),url(/img/books.jpeg);
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6)),url(books.jpeg);
     background-position: center center;
     width: 100%;
     height: 700px;
@@ -144,21 +138,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/*
-.login {
-    float: right;
-    margin:20px;
-}
-
-
-.register {
-    float: right;
-    padding:20px;
-}
-
-*/
-
-
 /**********************************************/
 
 
@@ -169,7 +148,7 @@ p {
 }
 
 #header .carousel-inner .item {
- /*   background: url(img/image-buysell.jpg); */
+/*    background: url(image-buysell.jpg);*/
     margin: 0px; padding: 0px;
     position: relative;
     width: 100%; 

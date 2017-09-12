@@ -8,8 +8,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Exo+2|Pacifico|Questrial|Vast+Shadow" rel="stylesheet">
-    <link href="{{ asset('css/stylesheet.css') }}" rel="stylesheet">
+<!-- for laravel-dont delete
+   <link href="{{ asset('css/stylesheet.css') }}" rel="stylesheet">
     <link href="{{ asset('css/animations.css') }}" rel="stylesheet">
+-->
+
+<link rel="stylesheet" href="animations.css">
+<link rel="stylesheet" href="stylesheet.css">
+
 </head>
 
 
@@ -234,12 +240,13 @@
     </div>
 
 </div>
+
+<!-- for laravel-dont delete
 <script src="{{ asset('js/javascript.js') }}"></script>
 <script src="{{ asset('js/css3-animate-it.js') }}"></script>
-<!--
+-->
 <script src='css3-animate-it.js'></script>
 <script src='javascipt.js'></script>
--->
 
 </body>
 </html>
