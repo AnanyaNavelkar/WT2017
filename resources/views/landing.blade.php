@@ -28,16 +28,26 @@
         </div> -->
 
         <div id="landing">
+
+        <div class=col-md-12 headdesign style="background-color:#111842; height: 60px ;">
+        </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 heading" >
+                    <div class="col-md-12 heading" >
+                    <div class="col-md-6">
+                        <img src="http://img.talkandroid.com/uploads/2015/09/google-play-books-logo.png"></img>
+                        </div>
+                        <div class="col-md-6">
                         <h2 id="landing-heading" >bookworm</h2>
                         <h4 id="landing-subhead">The best portal for exchange of books.</h4>
                     </div>
+                    </div>
 
+                </div>
+                <div class="row1">
+                <div class="col-md-12 row2">
                     <font style="color: white;">
                         <div class="col-md-6 login" >
-                            <div class="row">
                                 <!------ Registration page goes here ---->
 
                                 <div class="col-md-6 col-md-offset-4 panel-heading">Login</div>
@@ -94,9 +104,8 @@
                                         </div>
                                     </div>
                                 </form>
-                            </div>
-                            <div class="row">
-                                <div class=" register">
+</div>
+                                <div class=" col-md-6 register">
                                     <div class="col-md-6 col-md-offset-4 panel-heading">Register</div>
                                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                                         {{ csrf_field() }}
@@ -160,12 +169,10 @@
                                         </div>
                                     </form>
                                 </div>
-                            </div>
-
+                            </font>
                         </div>
-                    </font>
-                </div>
-            </div>
+                        </div>
+                        </div>
 
 
             <div class="image">
@@ -227,7 +234,7 @@
     </div>
     
     
-    <div id="footer">
+    <div id="footer" >
         <p id="para">Website designed and developed by:</p>
         <a href=""><p class="names">Abha Mutalik</p></a>
         <a href=""><p class="names">Ananya Navelkar</p></a>
