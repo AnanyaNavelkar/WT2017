@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Exo+2|Pacifico|Questrial|Vast+Shadow" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link href="{{ asset('css/stylesheet.css') }}" rel="stylesheet">
     <link href="{{ asset('css/animations.css') }}" rel="stylesheet">
 </head>
@@ -46,7 +48,7 @@
 
                 </div>
                 <!-- <div class="row1"> -->
-                <div class="col-md-12" style="background-color:black; position:relative; top:150px; width: 200px;">
+                <div class="col-md-12" style="background-color:black; position:relative; top:150px; width: 1000px; margin-left: 425px;">
                     <font style="color: white;">
                         <div class="col-md-6 login" style="position: relative;">
                                 <!------ Registration page goes here ---->
@@ -206,7 +208,20 @@
 
             <div id="sell">
                 <div class="animatedParent col-md-8" data-sequence="1000'">
-                  <h1 class='animated rotateInDownLeft desc' data-id="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+                  <h1 class='animated rotateInDownLeft desc' data-id="1">  
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    Login / Sign Up
+                      <br><br>
+                      <i class="fa fa-book" aria-hidden="true"></i>
+                      Enter the details of the book that you wish to sell
+                      <br><br>
+                      <i class="fa fa-book" aria-hidden="true"></i>
+                      Wait for interested buyers
+                      <br><br>
+                      <i class="fa fa-book" aria-hidden="true"></i>
+                      Aaaand you're done!
+                      <br><br>
+                  </h1>
               </div>
               <div class="desc-title col-md-4 animatedParent" data-sequence="1000'">
               <div id="flowBoxes">
@@ -222,15 +237,38 @@
                 <h1 class="animated bounceInDown" data-id="2">Call</h1>
             </div>
             <div class="animatedParent col-md-8" data-sequence="1000'">
-                <h1 class='animated rotateInDownRight desc' data-id="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+                <h1 class='animated rotateInDownRight desc' data-id="1" style="color: cyan;">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    The prospective buyer clicks on "Buy"
+                    <br><br>
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    An email is sent about the prospective buyer's details to the seller on his/her registered email id
+                    <br><br>
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    Additionally, a text message is also sent to the seller on his/her registered mobile number
+                    <br><br>
+                </h1>
 
 
             </div>
         </div>
 
-        <div id="buy">
+        <div id="buy" style="height: 800px;">
             <div class="animatedParent col-md-8" data-sequence="1000'">
-              <h1 class='animated rotateInDownLeft desc' data-id="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
+              <h1 class='animated rotateInDownLeft desc' data-id="1">
+                  <i class="fa fa-book" aria-hidden="true"></i>
+                    The interested buyer first logs in/registers to the portal
+                    <br><br>
+                  <i class="fa fa-book" aria-hidden="true"></i>
+                    The prospective buyer clicks on "Buy"
+                    <br><br>
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    An email is sent about the prospective buyer's details to the seller on his/her registered email id
+                    <br><br>
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    Additionally, a text message is also sent to the seller on his/her registered mobile number
+                    <br><br>
+              </h1>
           </div>
           <div class="desc-title col-md-4 animatedParent" data-sequence="1000'">
             <h1 class="animated bounceInDown" data-id="2">Buy</h1>
