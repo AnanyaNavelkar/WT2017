@@ -29,14 +29,15 @@
 
         <div id="landing">
 
-        <div class=col-md-12 headdesign style="background-color:#111842; height: 60px ;">
+        <div class=col-md-12 headdesign style="background-color:#191919; height: 60px ;">
         </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 heading" >
                     <div class="col-md-6">
-                        <img src="http://img.talkandroid.com/uploads/2015/09/google-play-books-logo.png"></img>
-                        </div>
+                    <img src="http://img.talkandroid.com/uploads/2015/09/google-play-books-logo.png">
+                       
+                         </div>
                         <div class="col-md-6">
                         <h2 id="landing-heading" >bookworm</h2>
                         <h4 id="landing-subhead">The best portal for exchange of books.</h4>
@@ -47,7 +48,7 @@
                 <div class="row1">
                 <div class="col-md-12 row2">
                     <font style="color: white;">
-                        <div class="col-md-6 login" >
+                        <div class="col-md-6 login" style="position: relative;">
                                 <!------ Registration page goes here ---->
 
                                 <div class="col-md-6 col-md-offset-4 panel-heading">Login</div>
@@ -208,8 +209,11 @@
                   <h1 class='animated rotateInDownLeft desc' data-id="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
               </div>
               <div class="desc-title col-md-4 animatedParent" data-sequence="1000'">
-                <h1 class="animated bounceInDown" data-id="2">Sell</h1>
-            </div>
+              <div id="flowBoxes">
+        <div class="left"><h1 class="animated bounceInDown" data-id="2">Sell</h1>
+       </div>
+</div>
+                     </div>
         </div>
 
 
