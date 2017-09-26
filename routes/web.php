@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/buy', 'UploadBookController@buy');
 
@@ -26,3 +26,5 @@ Route::get('sell', 'UploadBookController@index');
 Route::post('uploadbook', 'UploadBookController@storeBookDetails');
 
 Route::post('/send', '/Mail/ContactsShared@build');
+
+Route::get('/logout', 'HomeController@logout');
