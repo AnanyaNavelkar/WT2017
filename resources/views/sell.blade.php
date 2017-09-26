@@ -419,13 +419,14 @@ header,
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href='/buy'>BUY
+          <a class="dropdown-toggle" data-toggle="dropdown" href='#'>BUY
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">FE</a></li>
-            <li><a href="#">SE</a></li>
-            <li><a href="#">TE</a></li>
-            <li><a href="#">BE</a></li>
+            <li><a href='/filter'>ALL</a></li>
+            <li><a href='/filter'>FE</a></li>
+            <li><a href='/filter'>SE</a></li>
+            <li><a href='/filter'>TE</a></li>
+            <li><a href='/filter'>BE</a></li>
           </ul>
         </li>
         <li><a href='/sell'>SELL</a></li>

@@ -16,12 +16,12 @@ class UploadBookController extends Controller
         $data = UploadBook::get();
         return view('buy')->with('data',$data);
     }
-
+/*
     public function create()
     {
         return view('sell');
     }
-
+*/
     public function index()
     {
         return view('/sell');
@@ -59,6 +59,24 @@ class UploadBookController extends Controller
         return redirect('sell');
         //return Response::json($uploadedbook);
 
+    }
+
+     public function search() {
+
+        $data = UploadBook::get();
+        return view('buy')->with('data',$data);
+        // Sets the parameters from the get request to the variables.
+ /*       $name = Request::get('name');
+        $hasCoffeeMachine = Request::get('hasCoffeeMachine');
+
+        // Perform the query using Query Builder
+        $result = DB::table('customers')
+            ->select(DB::raw("*"))
+            ->where('name', '=', $name)
+            ->where('has_coffee_machine', '=', $hasCoffeeMachine)
+            ->get();
+
+        return $result;*/
     }
 
 }
