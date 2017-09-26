@@ -29,9 +29,8 @@
 
         <div id="landing">
 
-        <div class=col-md-12 headdesign style="background-color:#191919; height: 60px ;">
-        </div>
-            <div class="container">
+        
+            <div class="container" style="width: 100%;background: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Amazing-Free-Navy-Blue-Texture-Background.jpg);">
                 <div class="row">
                     <div class="col-md-12 heading" >
                     <div class="col-md-6">
@@ -39,14 +38,14 @@
                        
                          </div>
                         <div class="col-md-6">
-                        <h2 id="landing-heading" >bookworm</h2>
-                        <h4 id="landing-subhead">The best portal for exchange of books.</h4>
+                        <h2 id="landing-heading">bookworm</h2>
+                        <h4 id="landing-subhead" style="font-size: 50px;">The best portal for exchange of books...</h4>
                     </div>
                     </div>
 
                 </div>
-                <div class="row1">
-                <div class="col-md-12 row2">
+                <!-- <div class="row1"> -->
+                <div class="col-md-12" style="background-color:black; position:relative; top:150px; width: 200px;">
                     <font style="color: white;">
                         <div class="col-md-6 login" style="position: relative;">
                                 <!------ Registration page goes here ---->
@@ -172,7 +171,7 @@
                                 </div>
                             </font>
                         </div>
-                        </div>
+                        <!-- </div> -->
                         </div>
 
 
