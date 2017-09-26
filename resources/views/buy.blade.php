@@ -145,7 +145,7 @@ a:hover {
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href='/user'>ACCOUNT DETAILS</a></li>
-            <li><a href='/'>LOGOUT</a></li>
+            <li><a href='/logout'>LOGOUT</a></li>
           </ul>
         </li>
       </ul>
