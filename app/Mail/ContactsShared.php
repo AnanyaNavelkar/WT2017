@@ -29,8 +29,10 @@ class ContactsShared extends Mailable
     public function build()
     {
 
-    return $this->from('ananya.navelkar@gmail.com')
-                ->view('mail');
+    Mail::raw('test', function($message)
+    {
+        $message->to('ananya.navelkar@gmail.com');
+    });
 
     }
 }

@@ -2,25 +2,22 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Mail;
+use App\User;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 class MailController extends Controller {
-    public function send(Request $request)
+     public function build()
     {
-        $title = $request->input('title');
-        $content = $request->input('content');
 
-        Mail::send('mail', ['title' => $title, 'content' => $content], function ($message)
-        {
+    Mail::raw('Congratulations! you have successfully purchased this book
+        Thank you for using Bookworm!', function($message)
+    {
+        $message->to('ananya.navelkar@gmail.com');
+    });
+    return redirect('buy');
 
-            $message->from('ananya.navelkar@gmail.com', 'Christian Nwamba');
-
-            $message->to('ananya.navelkar@gmail.com');
-
-        });
-
-        return response()->json(['message' => 'Request completed']);
-    }
+        
+ }
 }

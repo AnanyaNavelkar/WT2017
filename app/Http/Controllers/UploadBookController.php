@@ -5,6 +5,7 @@ use Request;
 use Illuminate\Http\Requests;
 use App\UploadBook;
 use Response;
+use DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\File;
@@ -63,20 +64,21 @@ class UploadBookController extends Controller
 
      public function search() {
 
-        $data = UploadBook::get();
-        return view('buy')->with('data',$data);
+       // $data = UploadBook::get();
+        //return view('buy')->with('data',$data);
         // Sets the parameters from the get request to the variables.
- /*       $name = Request::get('name');
-        $hasCoffeeMachine = Request::get('hasCoffeeMachine');
+        $value = Input::get('val');
+        error_log($value);
+ /*      
+  $hasCoffeeMachine = Request::get('hasCoffeeMachine');
 
-        // Perform the query using Query Builder
-        $result = DB::table('customers')
+        // Perform the query using Query Builder*/
+        $result = DB::table('books_uploaded')
             ->select(DB::raw("*"))
-            ->where('name', '=', $name)
-            ->where('has_coffee_machine', '=', $hasCoffeeMachine)
+            ->where('year', '=', $value)
             ->get();
-
-        return $result;*/
+            error_log($result);
+            return view('buy')->with('data',$result);
     }
 
 }

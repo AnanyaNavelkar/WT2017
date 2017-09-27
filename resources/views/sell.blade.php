@@ -540,7 +540,7 @@ header,
       
       <div class="fancy-text-form">
       <select name="branch" id="year" class="white-blue-select form-signup">
-        <option value=""></option>
+        <option value="all">ALL</option>
         <option value="comp">COMPS</option>
         <option value="it">IT</option>
         <option value="extc">EXTC</option>

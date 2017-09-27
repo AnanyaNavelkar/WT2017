@@ -132,13 +132,18 @@ a:hover {
         <li class="dropdown">
           <a class="dropdown-toggle active" data-toggle="dropdown" href='#'>BUY
           <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href='/filter'>ALL</a></li>
-            <li><a href='/filter'>FE</a></li>
+<!--          <ul class="dropdown-menu">
+            <li ><a href='/filter'>ALL</a></li>
+            <li name="val" value="FE"><a href='/filter'>FE</a></li>
             <li><a href='/filter'>SE</a></li>
             <li><a href='/filter'>TE</a></li>
             <li><a href='/filter'>BE</a></li>
-          </ul>
+          </ul>-->
+          <form role="form" method="Post" action="/filter" accept-charset="UTF-8">
+          <select  id="val" class="drop" name="val">
+        <option value="FE" id="val">FE</option>
+    </select>
+    </form>
         </li>
         <li><a href='/sell'>SELL</a></li>
         <li class="dropdown">
@@ -229,7 +234,7 @@ a:hover {
       <p><strong>Class:</strong></p>
       <span>TE Comps</span><br><br>
     </div>
-    <button class="w3-button w3-block w3-dark-grey connect-button" onclick="onClickBuy()">+ Buy</button>
+    <button class="w3-button w3-block w3-dark-grey connect-button" onclick="onClickBuy()" ><a href='/send'>+ Buy</a></button>
 </div>
 @endforeach
 <!--    

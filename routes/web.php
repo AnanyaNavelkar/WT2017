@@ -25,7 +25,7 @@ Route::get('sell', 'UploadBookController@index');
 
 Route::post('uploadbook', 'UploadBookController@storeBookDetails');
 
-Route::post('/send', '/Mail/ContactsShared@build');
+Route::get('/send', 'MailController@build');
 
 Route::get('/filter', 'UploadBookController@search');
 
