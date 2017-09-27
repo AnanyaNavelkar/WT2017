@@ -137,18 +137,18 @@ a:hover {
         <li class="dropdown">
           <a class="dropdown-toggle active" data-toggle="dropdown" href='#'>BUY
           <span class="caret"></span></a>
-<!--          <ul class="dropdown-menu">
+          <ul class="dropdown-menu">
             <li ><a href='/filter'>ALL</a></li>
             <li name="val" value="FE"><a href='/filter'>FE</a></li>
             <li><a href='/filter'>SE</a></li>
             <li><a href='/filter'>TE</a></li>
             <li><a href='/filter'>BE</a></li>
-          </ul>-->
-          <form role="form" method="Post" action="/filter" accept-charset="UTF-8">
+          </ul>
+     <!--     <form role="form" method="Post" action="/filter" accept-charset="UTF-8">
           <select  id="val" class="drop" name="val">
         <option value="FE" id="val">FE</option>
     </select>
-    </form>
+    </form>-->
         </li>
         <li><a href='/sell'>SELL</a></li>
         <li class="dropdown">
