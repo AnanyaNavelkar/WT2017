@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width", initial-scale="1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Exo+2|Pacifico|Questrial|Vast+Shadow" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link href="{{ asset('css/stylesheet.css') }}" rel="stylesheet">
     <link href="{{ asset('css/animations.css') }}" rel="stylesheet">
@@ -34,20 +35,25 @@
 
         
             <div class="container" style="width: 100%;background: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Amazing-Free-Navy-Blue-Texture-Background.jpg);">
-                <div class="row">
+                <!-- <div class="row"> -->
                     <div class="col-md-12 heading" >
                     <div class="col-md-6">
                     <img src="http://img.talkandroid.com/uploads/2015/09/google-play-books-logo.png">
                        
                          </div>
                         <div class="col-md-6">
-                        <h2 id="landing-heading">bookworm</h2>
-                        <h4 id="landing-subhead" style="font-size: 50px;">The best portal for exchange of books...</h4>
+                        <div class="animatedParent animateOnce" data-sequence="1000'">
+                            <h2 id="landing-heading" class="animated bounceInDown" data-id="2">bookworm</h2>
+                        </div>
+                        
+                        <div class="typewriter">
+                            <h4 id="landing-subhead" style="font-size: 50px;">The best place to exchange books.</h4>
+                        </div>
                     </div>
                     </div>
 
-                </div>
-                <!-- <div class="row1"> -->
+                <!-- </div> -->
+                
                 <div class="col-md-12" style="background-color:black; position:relative; top:150px; width: 1000px; margin-left: 425px;">
                     <font style="color: white;">
                         <div class="col-md-6 login" style="position: relative;">
@@ -174,8 +180,8 @@
                                 </div>
                             </font>
                         </div>
-                        <!-- </div> -->
                         </div>
+                      
 
 
             <div class="image">
@@ -207,7 +213,7 @@
             </div>
 
             <div id="sell">
-                <div class="animatedParent col-md-8" data-sequence="1000'">
+                <div class="animatedParent animateOnce col-md-8" data-sequence="1000'">
                   <h1 class='animated rotateInDownLeft desc' data-id="1">  
                     <i class="fa fa-book" aria-hidden="true"></i>
                     Login / Sign Up
@@ -223,7 +229,7 @@
                       <br><br>
                   </h1>
               </div>
-              <div class="desc-title col-md-4 animatedParent" data-sequence="1000'">
+              <div class="desc-title col-md-4 animatedParent animateOnce" data-sequence="1000'">
               <div id="flowBoxes">
         <div class="left"><h1 class="animated bounceInDown" data-id="2">Sell</h1>
        </div>
@@ -233,10 +239,10 @@
 
 
         <div id="call">
-            <div class="desc-title col-md-4 animatedParent" data-sequence="1000'">
+            <div class="desc-title col-md-4 animatedParent  animateOnce" data-sequence="1000'">
                 <h1 class="animated bounceInDown" data-id="2">Call</h1>
             </div>
-            <div class="animatedParent col-md-8" data-sequence="1000'">
+            <div class="animatedParent  animateOnce col-md-8" data-sequence="1000'">
                 <h1 class='animated rotateInDownRight desc' data-id="1" style="color: cyan;">
                     <i class="fa fa-book" aria-hidden="true"></i>
                     The prospective buyer clicks on "Buy"
@@ -254,7 +260,7 @@
         </div>
 
         <div id="buy" style="height: 800px;">
-            <div class="animatedParent col-md-8" data-sequence="1000'">
+            <div class="animatedParent animateOnce col-md-8" data-sequence="1000'">
               <h1 class='animated rotateInDownLeft desc' data-id="1">
                   <i class="fa fa-book" aria-hidden="true"></i>
                     The interested buyer first logs in/registers to the portal
@@ -270,7 +276,7 @@
                     <br><br>
               </h1>
           </div>
-          <div class="desc-title col-md-4 animatedParent" data-sequence="1000'">
+          <div class="desc-title col-md-4 animatedParent animateOnce" data-sequence="1000'">
             <h1 class="animated bounceInDown" data-id="2">Buy</h1>
         </div>
     </div>
