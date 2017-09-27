@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Theme The Band</title>
+  <title>Book Exchange Portal</title>
   <meta charset="utf-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,8 +27,12 @@
   .quote, h4 {
       margin: 10px 0 30px 0;
       letter-spacing: 10px;      
-      font-size: 20px;
+      font-size: 50px;
       color: #ffffff;
+  }
+
+  .quoted {
+    font-size: 30px;
   }
   .container {
       padding: 80px 120px;
@@ -39,11 +43,11 @@
     margin: 0px; padding: 0px;
     position: relative;
     width: 100%; 
-    height: 500px;
-    background-attachment: fixed;
+    height: 800px;
+   /* background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 
   .nav-tabs li a {
@@ -57,7 +61,7 @@
       border: 0;
       font-size: 11px !important;
       letter-spacing: 4px;
-      opacity: 0.9;
+      opacity: 0.75;
   }
     
     .navbar-brand {
@@ -455,26 +459,26 @@ header,
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
 
-      <div class="item active" style="background-image: url(/img/image-buysell1.jpg);">
+      <div class="item active" style="background-image: url(/img/image-buysell1.jpg); filter: grayscale(90%);">
         
         <div class="carousel-caption">
           <h3 class="quote">“Education is the most powerful weapon which you can use to change the world.”</h3>
-            <p>-Nelson Mandela</p>
+            <p class="quoted">-Nelson Mandela</p>
         </div>
       </div>
 
-      <div class="item" style="background-image: url(/img/image-buysell2.jpg);">
+      <div class="item" style="background-image: url(/img/image-buysell2.jpg); filter: grayscale(90%);">
         
         <div class="carousel-caption">
           <h3 class="quote">"Power is gained by sharing knowledge, not hoarding it."</h3>
         </div>
       </div>
     
-      <div class="item" style="background-image: url(/img/image-buysell3.jpg);">
+      <div class="item" style="background-image: url(/img/image-buysell3.jpg); filter: grayscale(90%);">
         
         <div class="carousel-caption">
           <h3 class="quote">"An investment in knowledge pays the best interest."</h3>
-            <p>-Benjamin Franklin</p>
+            <p class="quoted">-Benjamin Franklin</p>
         </div>
       </div>
   
