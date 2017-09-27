@@ -426,11 +426,11 @@ header,
           <a class="dropdown-toggle" data-toggle="dropdown" href='#'>BUY
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href='/filter'>ALL</a></li>
-            <li><a href='/filter'>FE</a></li>
-            <li><a href='/filter'>SE</a></li>
-            <li><a href='/filter'>TE</a></li>
-            <li><a href='/filter'>BE</a></li>
+            <li ><a href='/buy'>ALL</a></li>
+            <li><a href="/filterFE">FE</a></li>
+            <li><a href="/filterSE">SE</a></li>
+            <li><a href="/filterTE">TE</a></li>
+            <li><a href="/filterBE">BE</a></li>
           </ul>
         </li>
         <li><a href='/sell'>SELL</a></li>
@@ -438,8 +438,7 @@ header,
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ Auth::user()->name}}
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/user">ACCOUNT DETAILS</a></li>
-            <li><a href='/'>LOGOUT</a></li>
+            <li><a href='/logout'>LOGOUT</a></li>
           </ul>
         </li>
       </ul>

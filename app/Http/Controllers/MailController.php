@@ -11,7 +11,9 @@ class MailController extends Controller {
      public function build()
     {
 
-    Mail::raw('Congratulations! you have successfully purchased this book
+    Mail::raw('Abha Mutalik is interested in purchasing your book.
+    Contact Details of Abha Mutalik are:
+     abhamutalik@gmail.com
         Thank you for using Bookworm!', function($message)
     {
         $message->to('ananya.navelkar@gmail.com');

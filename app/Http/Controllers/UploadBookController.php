@@ -9,13 +9,16 @@ use DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\File;
+use App\User;
+use Illuminate\Support\Facades\Route;
 class UploadBookController extends Controller
 {
 
     public function buy()
     {
-        $data = UploadBook::get();
-        return view('buy')->with('data',$data);
+        $users = DB::table('users')
+            ->join('books_uploaded', 'users.id', '=', 'books_uploaded.uploader_UID')->get();
+        return view('buy')->with('data',$users);
     }
 /*
     public function create()
@@ -62,23 +65,50 @@ class UploadBookController extends Controller
 
     }
 
-     public function search() {
+     public function searchFE() {
+    $users=DB::table('users')
+        ->join('books_uploaded', function ($join){
+            $join->on('users.id', '=', 'books_uploaded.uploader_UID')
+                 ->where('books_uploaded.year', '=', 'FE');
+        })->get();
 
-       // $data = UploadBook::get();
-        //return view('buy')->with('data',$data);
-        // Sets the parameters from the get request to the variables.
-        $value = Input::get('val');
-        error_log($value);
- /*      
-  $hasCoffeeMachine = Request::get('hasCoffeeMachine');
-
-        // Perform the query using Query Builder*/
-        $result = DB::table('books_uploaded')
-            ->select(DB::raw("*"))
-            ->where('year', '=', $value)
-            ->get();
-            error_log($result);
-            return view('buy')->with('data',$result);
+        error_log($users);
+                return view('buy')->with('data',$users);
     }
+
+
+     public function searchSE() {
+    $users=DB::table('users')
+        ->join('books_uploaded', function ($join){
+            $join->on('users.id', '=', 'books_uploaded.uploader_UID')
+                 ->where('books_uploaded.year', '=', 'SE');
+        })->get();
+
+        error_log($users);
+                return view('buy')->with('data',$users);
+    }
+
+         public function searchTE() {
+    $users=DB::table('users')
+        ->join('books_uploaded', function ($join){
+            $join->on('users.id', '=', 'books_uploaded.uploader_UID')
+                 ->where('books_uploaded.year', '=', 'TE');
+        })->get();
+
+        error_log($users);
+                return view('buy')->with('data',$users);
+    }
+
+     public function searchBE() {
+    $users=DB::table('users')
+        ->join('books_uploaded', function ($join){
+            $join->on('users.id', '=', 'books_uploaded.uploader_UID')
+                 ->where('books_uploaded.year', '=', 'BE');
+        })->get();
+
+        error_log($users);
+                return view('buy')->with('data',$users);
+    }
+
 
 }

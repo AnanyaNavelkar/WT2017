@@ -138,11 +138,11 @@ a:hover {
           <a class="dropdown-toggle active" data-toggle="dropdown" href='#'>BUY
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li ><a href='/filter'>ALL</a></li>
-            <li name="val" value="FE"><a href='/filter'>FE</a></li>
-            <li><a href='/filter'>SE</a></li>
-            <li><a href='/filter'>TE</a></li>
-            <li><a href='/filter'>BE</a></li>
+            <li ><a href='/buy'>ALL</a></li>
+            <li><a href="/filterFE">FE</a></li>
+            <li><a href="/filterSE">SE</a></li>
+            <li><a href="/filterTE">TE</a></li>
+            <li><a href="/filterBE">BE</a></li>
           </ul>
      <!--     <form role="form" method="Post" action="/filter" accept-charset="UTF-8">
           <select  id="val" class="drop" name="val">
@@ -155,7 +155,6 @@ a:hover {
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ Auth::user()->name}}
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href='/user'>ACCOUNT DETAILS</a></li>
             <li><a href='/logout'>LOGOUT</a></li>
           </ul>
         </li>
@@ -242,7 +241,7 @@ a:hover {
       <p>Price: {{$displaybook->price}}</p>
       <hr>
       <p><strong>Seller:</strong></p>
-      <span>Simran Nayak</span><br>
+      <span>{{$displaybook->name}}</span><br>
       <p><strong>Class:</strong></p>
       <span>TE Comps</span><br><br>
     </div>

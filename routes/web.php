@@ -27,6 +27,8 @@ Route::post('uploadbook', 'UploadBookController@storeBookDetails');
 
 Route::get('/send', 'MailController@build');
 
-Route::get('/filter', 'UploadBookController@search');
-
+Route::get('/filterFE', 'UploadBookController@searchFE');
+Route::get('/filterSE', 'UploadBookController@searchSE');
+Route::get('/filterTE', 'UploadBookController@searchTE');
+Route::get('/filterBE', 'UploadBookController@searchBE');
 Route::get('/logout', 'HomeController@logout');
